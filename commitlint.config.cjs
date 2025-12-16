@@ -2,13 +2,16 @@
  * @Author: sumail sumail@xyzzdev.com
  * @Date: 2025-12-16 13:42:25
  * @LastEditors: sumail sumail@xyzzdev.com
- * @LastEditTime: 2025-12-16 14:10:02
+ * @LastEditTime: 2025-12-16 14:21:57
  * @FilePath: /micro-platform/host-shell/commit-lint-config.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
 module.exports = {
   extends: ['@commitlint/config-conventional'],
   rules: {
+    'type-empty': [2, 'never'],
+    'type-enum': [2, 'always', ['feat', 'fix', 'styles', 'refactor']],
+
     'scope-empty': [2, 'never'],
     'scope-enum': [2, 'always', ['pages', 'components', 'styles']],
   },
