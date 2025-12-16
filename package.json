@@ -1,0 +1,23 @@
+{
+    "name": "micro-platform",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc -b && vite build",
+        "lint": "eslint .",
+        "preview": "vite preview",
+        "commit": "git-cz",
+        "prepare": "husky install"
+    },
+    "dependencies": {
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+        "react-router-dom": "^7.10.0",
+        "zustand": "^5.0.9"
+    },
+    "devDependencies": {
+        "husky": "^8.0.0"
+    }
+}
