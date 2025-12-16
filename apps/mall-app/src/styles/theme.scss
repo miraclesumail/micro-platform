@@ -1,0 +1,45 @@
+// styles/_theme.scss
+
+// 1. 定义三套主题的配色 Map
+$themes: (
+  'white': (
+    bg-color: #855b5b,
+    text-color: #333333,
+    primary-color: #1890ff,
+    border-color: #e8e8e8,
+  ),
+  'black': (
+    bg-color: #8e53ad,
+    text-color: #ffffff,
+    primary-color: #156008,
+    border-color: #333333,
+  ),
+  'gray': (
+    bg-color: #3270ce,
+    text-color: #595959,
+    primary-color: #cf5f2c,
+    border-color: #d9d9d9,
+  ),
+);
+
+// 2. 混合宏：用于遍历生成 CSS 变量
+@mixin generate-theme-vars {
+  @each $theme-name, $theme-map in $themes {
+    // 生成选择器，例如: html[data-theme="black"]
+    html[data-theme='#{$theme-name}'] {
+      @each $key, $value in $theme-map {
+        // 将 SCSS 变量转为 CSS 变量，例如: --bg-color: #000000;
+        --#{$key}: #{$value};
+      }
+    }
+  }
+}
+
+// 3. 执行混合宏（在全局引入处调用）
+@include generate-theme-vars;
+
+// 4. 定义一个辅助函数，方便在其他 scss 文件中使用
+// 使用方式: color: v(text-color);
+@function v($key) {
+  @return var(--#{$key});
+}

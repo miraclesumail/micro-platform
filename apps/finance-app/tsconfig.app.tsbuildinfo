@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/micro-entry.tsx","./src/components/routesync.tsx","./src/pages/dashboard.tsx","./src/pages/reports.tsx","./src/pages/setting.tsx","./src/types/global.d.ts"],"version":"5.9.3"}

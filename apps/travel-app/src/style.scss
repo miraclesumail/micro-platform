@@ -1,0 +1,6 @@
+@use './styles/theme' as *;
+@include generate-theme-vars;
+
+.container {
+    color: v(primary-color);
+}

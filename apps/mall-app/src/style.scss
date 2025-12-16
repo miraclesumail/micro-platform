@@ -1,0 +1,11 @@
+@use './styles/theme' as *;
+
+@include generate-theme-vars;
+
+.container {
+    background: v(bg-color);
+}
+
+.root-header {
+    color: yellowgreen !important;
+}

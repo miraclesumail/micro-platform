@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/router.tsx","./src/components/header.tsx","./src/components/protectedroute.tsx","./src/components/publicroute.tsx","./src/components/sidebar.tsx","./src/layout/auth.tsx","./src/layout/main.tsx","./src/microfe/loader.ts","./src/microfe/register.ts","./src/pages/login.tsx","./src/types/global.d.ts"],"errors":true,"version":"5.9.3"}

@@ -1,0 +1,15 @@
+@use './styles/theme' as *;
+
+@include generate-theme-vars;
+
+.finance {
+  color: v(primary-color) !important;
+}
+
+.user {
+  color: v(text-color);
+}
+
+.root-header {
+  color: yellow !important;
+}
