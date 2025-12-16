@@ -34,10 +34,10 @@
   },
  "config": {
     "commitizen": {
-      "path": "./host-shell/node_modules/cz-customizable"
+      "path": "cz-customizable"
     },
     "cz-customizable": {
-      "config": "./host-shell/.cz-config.cjs"
+      "config": ".cz-config.cjs"
     }
   }
 }
